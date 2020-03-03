@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Weeknd</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='styles/styles.css' />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab' rel='stylesheet' type='text/css'>
+  </head>
+  <body style=" background: url(../images/back/background.jpg) no-repeat 100% 5%;">
+
+    <header>
+      <div style="height:420px;" class="embeded-responsive  position-absolute hidden-sm">
+        
+        <iframe width="100%" height="420px;" src="https://www.youtube.com/embed/I1BfoRR-ST8?autoplay=1&mute=1&enablejsapi=1"  frameborder="0" allow="autoplay; accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+      </div>
+
+      <nav style="background: crimson;" class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a style="color:black;" href="/" class="navbar-brand">The Weeknd</a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/">Home</a></li>
+
+            </ul><!-- nav -->
+          </div><!-- navbar-collapse -->
+        </div><!-- container -->
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+            <article class="speakerslist <% if (pageID == 'home') { %>jumbotron hidden-xs<% } %>">
+                <div class="container">
+                  <div class="row">
+                      <% theWeekndPage.forEach((item)=> { %>
+                      <div class="<% if (pageID == 'home') { %>col-sm-4 text-center<% } else { %>col-sm-8 <% } %>">
+                        <h3 style="color:black;" class="speakerslist-title"><%= item.albumTitle %></h3>
+                        <h5  class="speakerslist-name"><a href="/albums/<%= item.albumTitle %>"><b style ="color:black;"><u>Album Details</u></b></a></h5>
+                        <p class="speakerslist-info">
+                          <a href="/albums/<%= item.albumTitle %>">
+              
+                            <% if (pageID == 'albumList') { %>
+                              <img style="height:100px;"class="speakerslist-img img-circle pull-left" src="/images/speakers/<%= item.shortTitle %>.jpg" alt="Photo of <%= item.name %>"></a>
+                            <% } %>
+                          </a>
+              
+                          <% if (pageID == 'AlbumPage') { %>
+                            <img class="speakerslist-img img-responsive pull-left" style="height:300px; " src="/images/speakers/<%= item.shortTitle %>.jpg" alt="Photo of <%= item.albumTitle %>"></a>
+                            <div style="font-size:40px; font-family: verdana" >Tracks</div>
+                            
+                            <div style="font-size:25px; position:absolute; left:550px"><%- item.tracks %> </div>
+                            
+                          <% } %>
+                        </a>
+              
+                          <% if (pageID !== 'home') { %>
+                            <% if (pageID == 'albumList') { %>
+                              <%- item.summary %>
+                            <% } %>
+                          <% } %>
+                        </p>
+                      </div>
+                      <%  }); %>
+                  </div><!-- row -->
+                </div><!-- container -->
+              </article>
+              
+        </div><!-- primary -->
+        
+      </div>
+    </div><!-- container -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

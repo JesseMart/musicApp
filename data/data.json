@@ -1,0 +1,38 @@
+{
+    "theWeeknd": [{
+        "albumTitle": "After Hours",
+        "shortTitle": "after_Hours",
+        "tracks": "<li>AfterHours</li> <li>Blinding Lights</li> <li>Heartless</li>",
+        "coverArt": "after_Hours.jpg",
+        "releaseDate": "March 20th, 2020", 
+        "summary": "<p>After Hours is the upcoming fourth studio album by Canadian singer The Weeknd. The album will be released by XO and Republic Reccords on March 20th, 2020.</p>"
+},{
+        "albumTitle": "Trilogy",
+        "shortTitle": "the_trilogy",
+        "tracks": "<li>High for this</li> <li>What you need</li> <li>House of Balloons</li> <li>Wicked Games</li><li>Twenty Eight</li> <li>The Morning</li> <li>Coming Down</li>",
+        "coverArt": "the_trilogy.jpg",
+        "releaseDate": "2012", 
+        "summary": "<p>Toronto R&B enigma Abel Tesfaye presents his landmark trifecta of mixtapes in one bleak, woozy stretch. Over <i>Trilogy's</i> three hours, we descend ever deeper into the antihero's decadent universe.</p>"
+},{
+        "albumTitle": "Beauty Behind The Madness",
+        "shortTitle": "beauty_behind_the_madness",
+        "tracks": "<li>Often</li> <li>The Hills</li> <li>Shameless</li> <li>Angel</li> <li>In the Night</li> <li>Earned It</li> <li>Can't Feel My Face</li>",
+        "coverArt": "beauty_behind_the_madness.jpg",
+        "releaseDate": "2015", 
+        "summary": "<p>Beauty Behind The Madness is the second studio album by Canadian singer The Weeknd. The album features guest appearances from Labrinth, Ed Sheeran, and Lana Del Rey, with production handled by The Weeknd himself.</p>"
+},{
+        "albumTitle": "Starboy",
+        "shortTitle": "starboy_theWeeknd",
+        "tracks": "<li>StarboyParty</li><li>Monster</li><li>False Alarm</li><li>Rockin</li><li>True Colors</li><li>Sidewalks</li><li>Die For You</li>",
+        "coverArt": "starboy_theWeeknd.jpg",
+        "releaseDate": "2016",
+        "summary": "<p> Starboy is the third album by The Weeknd. It was released on November 25, 2016. Starboy received generally positive reviews from critics and debuted at number one on the US Billboard 200, with 348,000 album-equivalent units, 209,000 of which were pure sales.</p>"
+},{
+        "albumTitle": "My Dear Melancholy",
+        "shortTitle": "my_Dear_Melancholy",
+        "tracks": "<li>Call out My Name</li><li>Try Me</li><li>Wasted Times</li><li>I was Never There</li><li>Hurt You</li><li>Privilage</li>",
+        "coverArt": "my_Dear_Melancholy.jpg",
+        "releaseDate": "2018",
+        "summary": "<p> My Dear Melancholy has been described as a return to the darker style of the The Weeknd's earlier work, such as Trilogy (2012) and Kiss Land (2013) and focuses on the The Weeknd's past relationships with model Bella Hadid and singer Selena Gomez.</p>"
+}]
+}
