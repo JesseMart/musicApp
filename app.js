@@ -11,7 +11,8 @@ app.set('view engine', 'ejs');
 //routes 
 app.use(require('./routes/index.js'));
 app.use(require('./routes/albums.js'));
-
+app.use(require('./routes/feedback.js'));
+app.use(require('./routes/api.js'));
 
 //choosing which port
 app.listen(5000, () => {
