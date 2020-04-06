@@ -5,4 +5,4 @@ This application shows the artist singer and songwriter "The Weeknd" basic infor
 
 Home Page : 
 
-![Home Page]
+![Home Page](public/images/misc/home_page.png)
